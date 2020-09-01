@@ -78,7 +78,7 @@ export default class Recipe {
 
         let count;
         if (arrCount.length === 1) {
-          count = Math.floor(eval(arrIng[0].replace('-', '+')) * 10) / 10;
+          count = (eval(arrIng[0].replace('-', '+')) * 100) / 100;
         } else {
           count = eval(arrIng.slice(0, unitIndex).join('+')); // eval will do calculate
         }

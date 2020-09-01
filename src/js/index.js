@@ -15,7 +15,7 @@ import { elements, renderLoader, clearLoader } from './view/base';
 // Shopping list object
 // Liked recipes
 const state = {};
-window.state = state;
+// window.state = state;
 
 /////////////////////
 // Search controller
@@ -23,7 +23,7 @@ window.state = state;
 const controlSearch = async () => {
   // 1) Get query from view
   const query = searchView.getInput(); // todo
-  console.log(query);
+  // console.log(query);
 
   if (query) {
     // 2) new search object and add to state
@@ -212,4 +212,4 @@ elements.recipe.addEventListener('click', (e) => {
   // console.log(state.recipe);
 });
 
-window.l = new List();
+// window.l = new List();
