@@ -18,12 +18,12 @@ export const highlightSelected = (id) => {
   });
 
   document
-    .querySelector(`a[href="#${id}"]`)
+    .querySelector(`.results__link[href="#${id}"]`)
     .classList.add('results__link--active');
 };
 
 // 'Pasta with tomato and spinach'
-const limitRecipeTitle = (title, limit = 17) => {
+export const limitRecipeTitle = (title, limit = 17) => {
   const newTitle = [];
   title.split(' ').reduce((prev, cur) => {
     if (prev + cur.length <= limit) {
